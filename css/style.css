@@ -55,6 +55,7 @@ button:focus {
     width: 95%;
     max-width: 350px;
     position: relative;
+    min-height: 26rem;
 }
 
 .datepicker-trigger {
@@ -102,7 +103,7 @@ button:focus {
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     padding: 1rem;
     position: absolute;
-    top: calc(100% + 0.75rem);
+    top: 4rem;
     left: 0;
 }
 
