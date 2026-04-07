@@ -7,11 +7,18 @@
     <title>Datepicker UI</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div class="datepicker">
+    <div class="datepicker-wrapper">
+        <div class="datepicker-trigger">
+            <input type="text" placeholder="Select date" aria-label="Select date">
+            <button class="trigger-btn" aria-label="Open datepicker">
+                <span class="material-symbols-outlined">calendar_month</span>
+            </button>
+        </div>
+
+        <div class="datepicker">
         <div class="datepicker-top">
             <div class="btn-group">
                 <button class="tag">Today</button>
@@ -70,6 +77,7 @@
 
         </div>
 
+    </div>
     </div>
     
 </body>

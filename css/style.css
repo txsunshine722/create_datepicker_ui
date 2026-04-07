@@ -51,13 +51,59 @@ button:focus {
     direction: ltr;
 }
 
-.datepicker {
+.datepicker-wrapper {
     width: 95%;
     max-width: 350px;
+    position: relative;
+}
+
+.datepicker-trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25), 0 6px 14px 0 rgba(0, 0, 0, 0.12);
+    padding: 0.35rem 0.4rem 0.35rem 0.75rem;
+}
+
+.datepicker-trigger input {
+    border: 0;
+    background: transparent;
+    width: 100%;
+    font: inherit;
+    color: var(--c-text-primary);
+}
+
+.datepicker-trigger input:focus {
+    outline: 0;
+}
+
+.datepicker-trigger input::placeholder {
+    color: var(--c-text-secondary);
+}
+
+.trigger-btn {
+    border: 0;
+    background-color: var(--c-theme-primary);
+    color: #fff;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datepicker {
+    width: 100%;
     background-color: var(--c-bg-tertiary);
     border-radius: 10px;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2) 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     padding: 1rem;
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 0;
 }
 
 
@@ -98,7 +144,7 @@ button:focus {
     border-radius: 12px;
     width: 2.5rem;
     height: 2.5rem;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25)0 0 10px 0 rgba(0, 0, 0, 0.15)
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25), 0 0 10px 0 rgba(0, 0, 0, 0.15);
 }   
 
 
@@ -113,7 +159,7 @@ button:focus {
     grid-row-gap: 1rem;
 }
 
-.day, date {
+.day, .date {
     justify-self: center;
 }
 
@@ -145,7 +191,7 @@ button:focus {
     border: 2px solid var(--c-theme-primary-accent);
 }
 
-.fade {
+.faded {
     color: var(--c-text-secondary);
 }
 
@@ -156,6 +202,6 @@ button:focus {
 
 }
 
-current-day:focus {
-    background-color: var(--c-theme-primary-accentt);
+.current-day:focus {
+    background-color: var(--c-theme-primary-accent);
 }
